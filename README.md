@@ -1,8 +1,8 @@
 # FearNet
 
 FearNet is an image classification model capable of identifying images likely to trigger phobias.
-The architecture leverages 8 transfer-learned pre-trained models ensembled to feed into a MLP architecture. 
-The input is any image (re-sized to 128x128). The output is a 17-long tensor, w/ each element describing the probability of one of the 16 phobias (1 class for no phobia) being detected in the input image.
+The architecture leverages 8 pre-trained computer vision models tuned to output an input vector to a MLP architecture. 
+The input to the ensemble is any image (that is re-sized to 128x128x3). The MLP output is a 17-long tensor, w/ each output element describing the presence probability of each phobia in the input image.
 
 Metrics
 --------
